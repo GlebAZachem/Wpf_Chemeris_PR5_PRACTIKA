@@ -15,18 +15,18 @@ using System.Windows.Shapes;
 namespace Wpf_Chemeris_PR5_PRACTIKA
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для Window3.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class Window3 : Window
     {
-        public Window1()
+        public Window3()
         {
             InitializeComponent();
         }
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Window2 window2 = new Window2();
-            window2.Show();
+            Window4 window4 = new Window4();
+            window4.Show();
         }
     }
 }

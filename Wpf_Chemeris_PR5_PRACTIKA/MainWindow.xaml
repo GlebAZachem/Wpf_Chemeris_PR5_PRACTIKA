@@ -1,0 +1,35 @@
+﻿<Window x:Class="Wpf_Chemeris_PR5_PRACTIKA.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Wpf_Chemeris_PR5_PRACTIKA"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="48*"/>
+            <RowDefinition Height="169*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="200*"></ColumnDefinition>
+            <ColumnDefinition Width="139*"></ColumnDefinition>
+            <ColumnDefinition Width="61*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock TextWrapping="Wrap" Margin="5,5,5,5" Grid.RowSpan="2">
+            MaimWindow.xaml
+        </TextBlock>
+        <Frame Grid.Column="1" Source="Page1.xaml"
+               BorderBrush="Black" BorderThickness="2" Grid.ColumnSpan="2" Height="96" VerticalAlignment="Center"/>
+        <TextBlock TextWrapping="Wrap" Margin="10,10,10,56" Grid.Column="1" Grid.ColumnSpan="2">
+            Page1.xaml
+        </TextBlock>
+        <Frame Grid.Column="1" Source="Page1.xaml" Margin="0,96,0,0"
+            BorderBrush="Black" BorderThickness="2" Grid.RowSpan="2"/>
+        <Frame Grid.Column="2" Source="Page1.xaml" Margin="0,96,0,0"
+            BorderBrush="Black" BorderThickness="2" Grid.RowSpan="2"/>
+        <TextBlock TextWrapping="Wrap" Margin="8,10,10,264" Grid.Column="1" Grid.Row="1"><Run Text="Page2.xaml"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Margin="10,5,3,264" Grid.Column="2" Grid.Row="1"><Run Text="Page3.xaml"/></TextBlock>
+        <Button x:Name="Задание_2" Content="Задание 2" HorizontalAlignment="Left" Margin="5,10,0,0" Grid.Row="1" VerticalAlignment="Top" Click="Задание_2_Click" Width="104"/>
+    </Grid>
+</Window>
